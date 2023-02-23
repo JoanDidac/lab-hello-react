@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+// import logo from './images/ironhack-logo-xs.png';
+// import menu from './images/menu-top-xs.png';
 import './App.css';
+import Navbar from '../src/components/Navbar';
+import Header from './components/Header';
+import Snippets from './components/Snippets';
+import Button from './components/Button';
 
-function App() {
+
+const App = () => {
+
   return (
+<>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar />
+    <Header />
+    <Button />
+      <Snippets />
+      
     </div>
+    </>
   );
 }
 
