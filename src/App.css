@@ -23,22 +23,63 @@
   font-size: 2.5rem;
   display: flex;
   justify-content: left;
+  position: relative;
+  z-index: 2;
   
 }
 
 .header p {
+  position: relative;
   font-size: 1rem;
+  z-index: 2;
+  font-weight:600;
+  
+}
+.header h1 {
+  position: relative;
+  z-index: 2;
+}
+
+#atomo {
+  width: 35%;
+  position: absolute;
+  margin-bottom: -70px;
+  margin-top: -150px; 
+  margin-left: -16vw;
+  margin-right: auto;
+  opacity: 0.6;
+  /* z-index: 1; */
+  /* padding-bottom: 100px;  */
+  
+}
+#atom {
+  position: relative;
+  z-index: 1;
 }
 
 .snippet-container {
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   font-size: 0.7rem;
   background-color: white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.snippet-container img  {
+  width: 60%;
+}
+
+.snippet-container p {
+  width: 150px;
+  margin-left: 15px;
+  
+}
+.components img {
+  margin-top: 10px;
 }
 
 .button {
